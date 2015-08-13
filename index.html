@@ -1,96 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="Udacity P1:Build a Portfolio Site">
-  <meta name="author" content="Alen Cabric">
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-  <meta name="mobile-web-app-capable" content="yes">
-  <title>Portfolio Site</title>
-  <link rel="stylesheet" href="css/normalize.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet'>
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <div class="container">
-    <header>
-    <div class="header-logo">
-      <a href="http://www.w3.org/html/logo/"><img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-performance-semantics.png" width="197" height="64" alt="HTML5 Powered with CSS3 / Styling, Performance &amp; Integration, and Semantics" title="HTML5 Powered with CSS3 / Styling, Performance &amp; Integration, and Semantics"></a>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Udacity P1:Build a Portfolio Site">
+    <meta name="author" content="Alen Cabric">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Portfolio Site</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet'>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-logo">
+        <a href="http://www.w3.org/html/logo/"><img class="header-logo-img" src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-performance-semantics.png" width="197" height="64" alt="HTML5 Powered with CSS3 / Styling, Performance &amp; Integration, and Semantics" title="HTML5 Powered with CSS3 / Styling, Performance &amp; Integration, and Semantics"></a>
+        </div>
+        <div class="header-text">
+        <h1>Alen Cabric</h1>
+        <h4>Design & Code Guru :-)</h4>
+        </div>
+      </header>
+      <hr>
+    <main>
+      <div class="main-pict">
+        <picture>
+         <source media="(min-width: 668px)" srcset="pictures/web_1026x578.jpg">
+         <source media="(max-width: 667px)" srcset="pictures/web-mobile.jpg">
+         <img src="pictures/web_1026x578.jpg" alt="Main picture: New Web Site">
+        </picture>
+      </div>
+      <div class="featured-text">
+        <h2>Featured Design Works</h2>
+      </div>
+      <div class="featured-boxes">
+        <picture>
+          <source media="(min-width: 668px)" srcset="pictures/logo_342x228.jpg">
+          <source media="(max-width: 667px)" srcset="pictures/logo_mobile.jpg">
+          <img src="pictures/logo_342x228.jpg" alt="Fetured picture: Logo Design">
+        </picture>
+        <h3>Logos ...</h3>
+        <a href="http://github.com/">Logo & Identity Style Guides</a>
+      </div>
+      <div class="featured-boxes">
+        <picture>
+          <source media="(min-width: 668px)" srcset="pictures/poster_342x228.jpg">
+          <source media="(max-width: 667px)" srcset="pictures/poster_mobile.jpg">
+          <img src="pictures/poster_342x228.jpg" alt="Fetured picture: Poster Design">
+        </picture>
+        <h3>Posters ...</h3>
+        <a href="http://github.com/">BTL Communication Galery</a>
+      </div>
+      <div class="featured-boxes">
+        <picture>
+          <source media="(min-width: 668px)" srcset="pictures/book_342x228.jpg">
+          <source media="(max-width: 667px)" srcset="pictures/book_mobile.jpg">
+          <img src="pictures/book_342x228.jpg" alt="Fetured picture: Book Cover Design">
+        </picture>
+        <h3>& Books</h3>
+        <a href="http://github.com/">Book Covers & Layouts</a>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-copyright">
+        <p>© alen_c. This page is writen in pure HTML+CSS (Flex Box).</p>
+      </div>
+    </footer>
     </div>
-    <div class="header-text">
-      <h1>Alen Cabric</h1>
-      <h4>Design & Code Guru :-)</h4>
-    </div>
-  </header>
-    <hr>
-  <main>
-    <div class="main-pict">
-      <picture>
-        <source 
-          media="(min-width: 668px)"
-          srcset="pictures/web_1026x578.jpg">
-        <source 
-          media="(max-width: 667px)"
-          srcset="pictures/web-mobile.jpg">
-        <img 
-          src="pictures/web_1026x578.jpg" 
-          alt="Main picture: New Web Site">
-      </picture>
-    </div>
-    <div class="featured-text">
-      <h2>Featured Design Works</h2>
-    </div>
-    <div class="featured-boxes">
-      <picture>
-        <source 
-          media="(min-width: 668px)"
-          srcset="pictures/logo_342x228.jpg">
-        <source 
-          media="(max-width: 667px)"
-          srcset="pictures/logo_mobile.jpg">
-        <img 
-          src="pictures/logo_342x228.jpg" 
-          alt="Fetured picture: Logo Design">
-      </picture>
-      <h3>Logos ...</h3>
-      <a href="http://github.com/">Logo & Identity Style Guides</a>
-    </div>
-    <div class="featured-boxes">
-      <picture>
-        <source 
-          media="(min-width: 668px)"
-          srcset="pictures/poster_342x228.jpg">
-        <source 
-          media="(max-width: 667px)"
-          srcset="pictures/poster_mobile.jpg">
-        <img 
-          src="pictures/poster_342x228.jpg" 
-          alt="Fetured picture: Poster Design">
-      </picture>
-      <h3>Posters ...</h3>
-      <a href="http://github.com/">BTL Communication Galery</a>
-    </div>
-    <div class="featured-boxes">
-      <picture>
-        <source 
-          media="(min-width: 668px)"
-          srcset="pictures/book_342x228.jpg">
-        <source 
-          media="(max-width: 667px)"
-          srcset="pictures/book_mobile.jpg">
-        <img 
-          src="pictures/book_342x228.jpg" 
-          alt="Fetured picture: Book Cover Design">
-      </picture>
-      <h3>& Books</h3>
-      <a href="http://github.com/">Book Covers & Layouts</a>
-    </div>
-  </main>
-  <footer>
-    <div class="footer-copyright">
-    <p>© alen_c. This page is writen in pure HTML+CSS (Flex Box).</p>
-    </div>
-  </footer>
-  </div>
-</body>
+  </body>
 </html>
